@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.chartWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.tooltip {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 8px var(--shadow);
+  font-size: 14px;
+}
+
+.tooltipDate {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 6px;
+}
+
+.tooltipVariation {
+  margin-bottom: 8px;
+}
+
+.tooltipVariation:last-child {
+  margin-bottom: 0;
+}
+
+.tooltipVariationName {
+  margin: 2px 0;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.tooltipData {
+  margin: 2px 0;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.tooltipRate {
+  margin: 2px 0;
+  font-size: 12px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    height: 350px;
+    min-height: 300px;
+  }
+
+  .tooltip {
+    font-size: 13px;
+    padding: 9px;
+  }
+
+  .tooltipDate {
+    font-size: 13px;
+  }
+
+  .tooltipVariationName {
+    font-size: 12px;
+  }
+
+  .tooltipData,
+  .tooltipRate {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    height: 320px;
+  }
+}
+
